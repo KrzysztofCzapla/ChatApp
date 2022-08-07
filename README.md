@@ -13,6 +13,6 @@ How to use:
 
 There are two themes that can be chosen.
 
-https://github.com/KrzysztofCzapla/ChatApp/blob/main/1.png
+![alt text](https://github.com/KrzysztofCzapla/ChatApp/blob/main/1.png)
 
-https://github.com/KrzysztofCzapla/ChatApp/blob/main/2.png
+![alt text](https://github.com/KrzysztofCzapla/ChatApp/blob/main/2.png)
