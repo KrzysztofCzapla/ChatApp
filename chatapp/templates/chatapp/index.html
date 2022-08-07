@@ -1,0 +1,33 @@
+{% extends "chatapp/base.html" %}
+{%block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Rooms</title>
+</head>
+<body>
+    <div class=" glass select frosted-card  text-center justify-content-center container  mx-auto  rounded-3">
+    <p></p>
+    <h1>What chat room would you like to enter?</h1><br>
+
+    <input id="room-name-input" class="h10 w-50 margin50 input1 borderradius" type="text" size="100"><br>
+
+    <input id="room-name-submit" class="h10 w-25  button-2" type="button" value="Enter">
+</div>
+    <script>
+        document.querySelector('#room-name-input').focus();
+        document.querySelector('#room-name-input').onkeyup = function(e) {
+            if (e.keyCode === 13) {  // enter, return
+                document.querySelector('#room-name-submit').click();
+            }
+        };
+
+        document.querySelector('#room-name-submit').onclick = function(e) {
+            var roomName = document.querySelector('#room-name-input').value;
+            window.location.pathname = '/chat/' + roomName + '/';
+        };
+    </script>
+</body>
+</html>
+{%endblock%}
