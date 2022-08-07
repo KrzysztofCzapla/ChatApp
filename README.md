@@ -4,6 +4,7 @@ This app uses:
 - Html, CSS, Javascript
 - Bootstrap
 - JQuery
+- Docker with Redis(Neccesery to use the app)
 
 How to use:
  - Login in with username and passowrd
